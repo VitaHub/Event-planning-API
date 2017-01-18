@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :invitations, only: :create
       get "invited" => "invitations#invited_users"
       get "uninvited" => "invitations#uninvited_users"
+      resources :comments, only: [:index, :create]
     end
   end
 end

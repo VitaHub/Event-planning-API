@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe InvitationsController, type: :controller do
 
-  describe "GET #create" do
+  describe "POST #create" do
     let(:event) { create(:event) }
 
     let(:valid_attributes) do

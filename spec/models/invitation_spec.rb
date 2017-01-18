@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe Invitation, type: :model do
   describe "invitation" do
     before(:each) { @invitation = create(:invitation) }
-    let(:event) { create(:event) }
 
     it "should be created" do
       expect(@invitation).to be_valid
