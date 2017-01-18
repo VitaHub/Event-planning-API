@@ -14,6 +14,14 @@ class InvitationsController < ApplicationController
     end
   end
 
+  def invited_users
+    render json: @event.invited_users
+  end
+
+  def uninvited_users
+    render json: @event.uninvited_users
+  end
+
   private
     def invitation_params
       params.require(:invitation).permit(:user_id)
