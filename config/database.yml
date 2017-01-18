@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: vitalii
+  password: vitapass
+
+development:
+  <<: *default
+  database: event-planning-API_development
+
+test:
+  <<: *default
+  database: event-planning-API_test
+
+production:
+  <<: *default
+  database: event-planning-API_production
+  # username: event-planning-API
+  # password: <%= ENV['EVENT-PLANNING-API_DATABASE_PASSWORD'] %>
