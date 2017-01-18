@@ -1,4 +1,10 @@
 class Event < ApplicationRecord
+  validates :description, length: { maximum: 500 }
+  validates_datetime :time, :after => lambda { DateTime.now }
+
+  scope :in_future, (lambda do
+    where("time > ?", DateTime.now)
+  end)
 
   scope :by_interval, (lambda do |interval|
     due_date = DateTime.now + interval[0..-2].to_i.days

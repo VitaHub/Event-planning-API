@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :update, :destroy]
 
   def index
-    @events = Event.order("time ASC")
+    @events = Event.in_future.order("time ASC")
     @events = @events.by_interval(params[:interval]) if params[:interval]
     @events = @events.due_date(params[:due]) if params[:due]
     render json: @events
