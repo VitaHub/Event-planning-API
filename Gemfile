@@ -11,6 +11,8 @@ gem 'puma',                     '~> 3.0'
 gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'validates_timeliness',     '~> 4.0'
+gem 'rails-controller-testing'
+# gem 'database_cleaner'
 
 group :development, :test do
   gem 'byebug', platform: :mri

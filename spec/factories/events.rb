@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :event do
-    name "MyString"
+    name "Test Event 1"
     organizer_id 1
-    time "2017-01-18 12:07:36"
-    place "MyString"
-    description "MyText"
+    time DateTime.now + 1.day
+    place "Lviv"
+    description "Some description"
   end
 end
