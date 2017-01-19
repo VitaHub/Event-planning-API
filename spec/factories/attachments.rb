@@ -1,0 +1,17 @@
+FactoryGirl.define do
+  factory :attachment do
+    user
+    event
+    file "data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACIAAAAa
+    CAYAAADSbo4CAAAABHNCSVQICAgIfAhkiAAAAWtJREFUSInt1rFOwkAcx/FvD
+    UdLUgkDJAwkLOKkg5AIPoEkGE3wUYjiK7QPIDLiIAvOgG8B4oJlUVQEpR3qoE
+    N1MDp0vBhk6G+74S6f3O+f3CnD8eMnS5CV/wb8JID4E0D8WRpISHbjbDajedH
+    EGllEtAj5/Db7BweEQnJHSt9I7bTG4GZAOp1GCEGn2+Wq25U9Tg5i23PGD2My
+    6xkqlQrVkyoA/f71YiFChFEU5XfteR4AWkSThkgVqus6u8UinXYb0zBwHAdNV
+    SmV9hYLAUgmkwghsEYjABKJBJqmSkOkqpk8TzhvNIjH45imydHRMXPbpn5W/6
+    1pIZDh8BbP88jlcsRiMTKZNVKpFNPZFMexFwfR1O8K7u/vAPh4f+f15QVFUVj
+    VV6UgUjOyubFBNBql1+tjGAZvrovruhQKO4hwWAqiyH6MJpMnWq1LLMtCCMFW
+    NsthuYyqyg2sNOSvszSPXgDxJ4D4E0D8+QJdFHAFBggIIQAAAABJRU5ErkJgg
+    g=="
+  end
+end

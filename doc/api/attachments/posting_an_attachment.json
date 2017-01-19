@@ -1,0 +1,46 @@
+{
+  "resource": "Attachments",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/events/:event_id/attachments",
+  "description": "Posting an attachment",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/events/455/attachments",
+      "request_body": "attachment[user_id]=723&attachment[file]=data%3Aimage%2Fpng%3Bbase64%2C+iVBORw0KGgoAAAANSUhE%3D%3D",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 30,\n  \"user_id\": 723,\n  \"event_id\": 455,\n  \"file\": {\n    \"url\": \"/uploads/attachment/file/30/file.png\"\n  },\n  \"created_at\": \"2017-01-19T14:42:35.735Z\",\n  \"updated_at\": \"2017-01-19T14:42:35.735Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"6a3c561e12c1156a597ebf9d29e4bb96\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "15c9c146-2d9a-4fec-a5d0-c289b655c938",
+        "X-Runtime": "0.082529",
+        "Vary": "Origin",
+        "Content-Length": "172"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "name": "Attachments",
+      "explanation": null,
+      "examples": [
+        {
+          "description": " Get listing of attachments",
+          "link": "attachments/_get_listing_of_attachments.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/attachments",
+          "method": "get"
+        },
+        {
+          "description": "Posting an attachment",
+          "link": "attachments/posting_an_attachment.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/attachments",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

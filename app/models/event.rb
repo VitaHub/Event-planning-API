@@ -3,6 +3,7 @@ class Event < ApplicationRecord
   has_many :invitations
   has_many :invited_users, through: :invitations, source: :user 
   has_many :comments
+  has_many :attachments
 
   validates :description, length: { maximum: 500 }
   validates_datetime :time, :after => lambda { DateTime.now }
