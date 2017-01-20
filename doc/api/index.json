@@ -25,6 +25,13 @@
       "explanation": null,
       "examples": [
         {
+          "description": "Log out",
+          "link": "authentication/log_out.json",
+          "groups": "all",
+          "route": "/api/auth/sign_out",
+          "method": "delete"
+        },
+        {
           "description": "Sign In from confirmed account",
           "link": "authentication/sign_in_from_confirmed_account.json",
           "groups": "all",

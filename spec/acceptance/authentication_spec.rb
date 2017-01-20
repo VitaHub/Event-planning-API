@@ -77,4 +77,24 @@ resource "Authentication" do
       expect(response_headers["uid"]).to be_present
     end
   end
+
+  delete "/api/auth/sign_out" do
+    let(:user) { create(:user) }
+    before do
+      auth_headers = user.create_new_auth_token
+      header "access-token", auth_headers["access-token"]
+      header "client", auth_headers["client"]
+      header "token-type", auth_headers["token-type"]
+      header "uid", auth_headers["uid"]
+    end
+
+    example "Log out" do
+      do_request
+
+      expect(status).to eq 200
+      json = JSON.parse(response_body)
+      expect(json["success"]).to eq(true)
+      expect(response_headers["access-token"]).not_to be_present
+    end
+  end
 end

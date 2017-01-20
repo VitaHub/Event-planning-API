@@ -1,9 +1,9 @@
 {
   "resource": "Authentication",
   "resource_explanation": null,
-  "http_method": "POST",
-  "route": "/api/auth",
-  "description": "Sign Up",
+  "http_method": "DELETE",
+  "route": "/api/auth/sign_out",
+  "description": "Log out",
   "explanation": null,
   "parameters": [
 
@@ -13,11 +13,15 @@
   ],
   "requests": [
     {
-      "request_method": "POST",
-      "request_path": "/api/auth",
-      "request_body": "{\"name\":\"TestUser\",\"nickname\":\"testname\",\"email\":\"test@gmail.com\",\"password\":\"testpass\",\"password_confirmation\":\"testpass\"}",
+      "request_method": "DELETE",
+      "request_path": "/api/auth/sign_out",
+      "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
+        "Access-Token": "_8CjBtwVv6tOIZ4br-3IYQ",
+        "Client": "9F83M2Rs9-k13bBV4hg2aA",
+        "Token-Type": "Bearer",
+        "Uid": "test7@test.com",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -26,18 +30,18 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"id\": 7766,\n    \"name\": \"TestUser\",\n    \"created_at\": \"2017-01-20T20:47:06.663Z\",\n    \"updated_at\": \"2017-01-20T20:47:06.663Z\",\n    \"provider\": \"email\",\n    \"uid\": \"test@gmail.com\",\n    \"nickname\": \"testname\",\n    \"email\": \"test@gmail.com\"\n  }\n}",
+      "response_body": "{\n  \"success\": true\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e226de7f2bfe8ac197f2c6bc6a9d8c44\"",
+        "ETag": "W/\"c955e57777ec0d73639dca6748560d00\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "10cb7d3a-02e7-428b-b571-42742857d3a8",
-        "X-Runtime": "0.416455",
+        "X-Request-Id": "8712f5ac-b6e1-41d0-a232-97521bed4654",
+        "X-Runtime": "0.109527",
         "Vary": "Origin",
-        "Content-Length": "226"
+        "Content-Length": "16"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
