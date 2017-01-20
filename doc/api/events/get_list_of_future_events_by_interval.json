@@ -1,0 +1,57 @@
+{
+  "resource": "Events",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/events",
+  "description": "Get list of future events by interval",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/events?time=future&interval=3d",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "YA1CH-uMyVopOeADuIm62A",
+        "Client": "pNQHlLja4XSONeDgCz3FCg",
+        "Token-Type": "Bearer",
+        "Uid": "test16@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "time": "future",
+        "interval": "3d"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 3817,\n    \"name\": \"First Event\",\n    \"organizer_id\": 7404,\n    \"time\": \"2017-01-22T17:52:48.801Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "YA1CH-uMyVopOeADuIm62A",
+        "token-type": "Bearer",
+        "client": "pNQHlLja4XSONeDgCz3FCg",
+        "expiry": "1486144368",
+        "uid": "test16@test.com",
+        "ETag": "W/\"f3597256178d4e6f00242d73fe5ad340\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "aef019b0-1171-41e8-bf52-715c1369f7ca",
+        "X-Runtime": "0.110104",
+        "Vary": "Origin",
+        "Content-Length": "136"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

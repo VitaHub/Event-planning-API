@@ -1,0 +1,45 @@
+{
+  "resource": "Authentication",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/auth/sign_in",
+  "description": "Sign In from unconfirmed account",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/auth/sign_in",
+      "request_body": "{\"email\":\"test5@test.com\",\"password\":\"testpass\",\"password_confirmation\":\"testpass\"}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": "{\n  \"success\": false,\n  \"errors\": [\n    \"A confirmation email was sent to your account at 'test5@test.com'. You must follow the instructions in the email before your account can be activated\"\n  ]\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "6848a4c3-0555-4b7e-b776-df49102117c0",
+        "X-Runtime": "0.024077",
+        "Vary": "Origin",
+        "Content-Length": "180"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "resource": "Comments",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/events/:event_id/comments",
+  "description": "Creating a new comment to event",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/events/3810/comments",
+      "request_body": "{\"comment\":{\"user_id\":7397,\"text\":\"Best Comment ever!\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "Lt7fJzgFg6G6Lm3LQIYfqA",
+        "Client": "nrySjtIq49wmqwEZKW9ImA",
+        "Token-Type": "Bearer",
+        "Uid": "test9@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 254,\n  \"user_id\": 7397,\n  \"event_id\": 3810,\n  \"text\": \"Best Comment ever!\",\n  \"created_at\": \"2017-01-20T17:52:48.093Z\",\n  \"updated_at\": \"2017-01-20T17:52:48.093Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "Lt7fJzgFg6G6Lm3LQIYfqA",
+        "token-type": "Bearer",
+        "client": "nrySjtIq49wmqwEZKW9ImA",
+        "expiry": "1486144367",
+        "uid": "test9@test.com",
+        "ETag": "W/\"5aa4f0fef530f392e0fb414a6cd84392\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3c95255a-557f-47ce-b469-d5125cbc7c7e",
+        "X-Runtime": "0.122427",
+        "Vary": "Origin",
+        "Content-Length": "149"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

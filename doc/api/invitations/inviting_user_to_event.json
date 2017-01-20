@@ -1,0 +1,55 @@
+{
+  "resource": "Invitations",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/events/:event_id/invitations",
+  "description": "Inviting user to event",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/events/3824/invitations",
+      "request_body": "{\"invitation\":{\"user_id\":7411}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "n8uo3nXvO4zVTcEkd54Qlw",
+        "Client": "csc6d2rUA2K65qMZAcd68w",
+        "Token-Type": "Bearer",
+        "Uid": "test24@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 909,\n  \"user_id\": 7411,\n  \"event_id\": 3824,\n  \"created_at\": \"2017-01-20T17:52:50.191Z\",\n  \"updated_at\": \"2017-01-20T17:52:50.191Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "n8uo3nXvO4zVTcEkd54Qlw",
+        "token-type": "Bearer",
+        "client": "csc6d2rUA2K65qMZAcd68w",
+        "expiry": "1486144370",
+        "uid": "test24@test.com",
+        "ETag": "W/\"bacf18c5968395c4e861913fd8635768\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "2352db3b-c386-46aa-a4b1-e4e8c095d61d",
+        "X-Runtime": "0.137086",
+        "Vary": "Origin",
+        "Content-Length": "121"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

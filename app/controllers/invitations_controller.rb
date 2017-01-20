@@ -1,5 +1,7 @@
 class InvitationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_event
+  before_action :check_if_participant
 
   def create
     @invitation = @event.invitations.new(invitation_params)
@@ -29,5 +31,12 @@ class InvitationsController < ApplicationController
 
     def set_event
       @event = Event.find(params[:event_id])
+    end
+
+    def check_if_participant
+      uninvited_users_id = @event.uninvited_users.map { |u| u.id }
+      if uninvited_users_id.include?(current_user.id)
+        raise SecurityError, "Only participant can invite to the event."
+      end
     end
 end

@@ -1,0 +1,55 @@
+{
+  "resource": "Attachments",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/events/:event_id/attachments",
+  "description": "Creating an attachment with file for the event",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/events/3808/attachments",
+      "request_body": "{\"attachment\":{\"user_id\":7390,\"file\":\"data:image/png;base64, iVBORw0KGgoAAAANSUhE==\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "CWZHKuqNSICs-rBjBxiwBA",
+        "Client": "De3mSMJzjoOYNEar5rwSlQ",
+        "Token-Type": "Bearer",
+        "Uid": "test3@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 285,\n  \"user_id\": 7390,\n  \"event_id\": 3808,\n  \"file\": {\n    \"url\": \"/uploads/attachment/file/285/file.png\"\n  },\n  \"created_at\": \"2017-01-20T17:52:46.789Z\",\n  \"updated_at\": \"2017-01-20T17:52:46.789Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "CWZHKuqNSICs-rBjBxiwBA",
+        "token-type": "Bearer",
+        "client": "De3mSMJzjoOYNEar5rwSlQ",
+        "expiry": "1486144366",
+        "uid": "test3@test.com",
+        "ETag": "W/\"103fd8b029f431b22e96370e5a3b913e\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "1108b14c-7c23-46f6-938a-53a045bc5524",
+        "X-Runtime": "0.137768",
+        "Vary": "Origin",
+        "Content-Length": "176"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

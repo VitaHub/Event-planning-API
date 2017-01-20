@@ -16,7 +16,10 @@ gem 'rails-controller-testing'
 gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-base64'
 gem 'rspec_api_documentation'
-gem "apitome"
+gem 'apitome'
+gem 'devise'
+gem 'devise_token_auth'
+gem 'omniauth'
 
 group :development, :test do
   gem 'byebug', platform: :mri

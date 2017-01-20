@@ -1,0 +1,55 @@
+{
+  "resource": "Invitations",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/events/:event_id/invited",
+  "description": "Get list of users that invited to event",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/events/3825/invited",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "S8bukkkerZ-rGgfwS9hsHw",
+        "Client": "aAq3h86JymwD2VfzopDtTg",
+        "Token-Type": "Bearer",
+        "Uid": "test27@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 7416,\n    \"name\": \"Participant\",\n    \"created_at\": \"2017-01-20T17:52:50.244Z\",\n    \"updated_at\": \"2017-01-20T17:52:50.244Z\",\n    \"provider\": \"email\",\n    \"uid\": \"test28@test.com\",\n    \"nickname\": null,\n    \"email\": \"test28@test.com\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "S8bukkkerZ-rGgfwS9hsHw",
+        "token-type": "Bearer",
+        "client": "aAq3h86JymwD2VfzopDtTg",
+        "expiry": "1486144370",
+        "uid": "test27@test.com",
+        "ETag": "W/\"ef985c937e016a59a7a7c4fe4285524e\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "2758c072-614f-4ba3-a67f-a08024f535c3",
+        "X-Runtime": "0.130525",
+        "Vary": "Origin",
+        "Content-Length": "199"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

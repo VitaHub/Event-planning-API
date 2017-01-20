@@ -1,0 +1,49 @@
+{
+  "resource": "Authentication",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/auth/confirmation",
+  "description": "User confirmation",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/auth/confirmation?config=default&confirmation_token=4UBcy66G2-hzhE6AsyfY&redirect_url=example.org",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "config": "default",
+        "confirmation_token": "4UBcy66G2-hzhE6AsyfY",
+        "redirect_url": "example.org"
+      },
+      "request_content_type": "application/json",
+      "response_status": 302,
+      "response_status_text": "Found",
+      "response_body": "<html><body>You are being <a href=\"http://example.org://example.org?account_confirmation_success=true&amp;client_id=Pl6KqLPQS13kVejPhy2Qvw&amp;config=default&amp;expiry=1486144367&amp;token=bXWQ5LonB4puo58Iw9oSpA&amp;uid=test4%40test.com\">redirected</a>.</body></html>",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org://example.org?account_confirmation_success=true&client_id=Pl6KqLPQS13kVejPhy2Qvw&config=default&expiry=1486144367&token=bXWQ5LonB4puo58Iw9oSpA&uid=test4%40test.com",
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "08a64f5e-b472-4108-b743-dac069c6e105",
+        "X-Runtime": "0.124815",
+        "Vary": "Origin",
+        "Content-Length": "268"
+      },
+      "response_content_type": "text/html; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

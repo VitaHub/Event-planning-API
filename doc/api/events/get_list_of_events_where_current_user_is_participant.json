@@ -1,0 +1,55 @@
+{
+  "resource": "Events",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/events",
+  "description": "Get list of events where current_user is participant",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/events",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "i3R7z3J0k7jJHGBI3d3wmA",
+        "Client": "2GyXIovo9caAmBxEiQunGg",
+        "Token-Type": "Bearer",
+        "Uid": "test10@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 3811,\n    \"name\": \"First Event\",\n    \"organizer_id\": 7398,\n    \"time\": \"2017-01-22T17:52:48.223Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  },\n  {\n    \"id\": 3812,\n    \"name\": \"Second Event\",\n    \"organizer_id\": 7399,\n    \"time\": \"2017-01-24T17:52:48.229Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "i3R7z3J0k7jJHGBI3d3wmA",
+        "token-type": "Bearer",
+        "client": "2GyXIovo9caAmBxEiQunGg",
+        "expiry": "1486144368",
+        "uid": "test10@test.com",
+        "ETag": "W/\"915ee0c434e5f312a440da17ed049c68\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "fc3ca4a7-1f4f-47c8-9540-aac4099e62fd",
+        "X-Runtime": "0.115339",
+        "Vary": "Origin",
+        "Content-Length": "272"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

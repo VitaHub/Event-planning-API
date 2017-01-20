@@ -1,0 +1,51 @@
+{
+  "resource": "Authentication",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/auth/sign_in",
+  "description": "Sign In from confirmed account",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/auth/sign_in",
+      "request_body": "{\"email\":\"test6@test.com\",\"password\":\"testpass\",\"password_confirmation\":\"testpass\"}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": {\n    \"id\": 7394,\n    \"email\": \"test6@test.com\",\n    \"provider\": \"email\",\n    \"uid\": \"test6@test.com\",\n    \"name\": \"MyString\",\n    \"nickname\": null\n  }\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "2Lh5xlhgvx10ZrnRNAZGEA",
+        "token-type": "Bearer",
+        "client": "ruyj4EWkSXD23AEMewsPVw",
+        "expiry": "1486144367",
+        "uid": "test6@test.com",
+        "ETag": "W/\"f1bcaceebe541f9a196eec0fe9392f1c\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "bf84c5ac-00c9-4e54-b256-7a97f950b828",
+        "X-Runtime": "0.125022",
+        "Vary": "Origin",
+        "Content-Length": "121"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

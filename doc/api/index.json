@@ -5,17 +5,153 @@
       "explanation": null,
       "examples": [
         {
-          "description": " Get listing of attachments",
-          "link": "attachments/_get_listing_of_attachments.json",
+          "description": "Creating an attachment with file for the event",
+          "link": "attachments/creating_an_attachment_with_file_for_the_event.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/attachments",
+          "method": "post"
+        },
+        {
+          "description": "Get list of attachments",
+          "link": "attachments/get_list_of_attachments.json",
           "groups": "all",
           "route": "/api/events/:event_id/attachments",
           "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Sign In from confirmed account",
+          "link": "authentication/sign_in_from_confirmed_account.json",
+          "groups": "all",
+          "route": "/api/auth/sign_in",
+          "method": "post"
         },
         {
-          "description": "Posting an attachment",
-          "link": "attachments/posting_an_attachment.json",
+          "description": "Sign In from unconfirmed account",
+          "link": "authentication/sign_in_from_unconfirmed_account.json",
           "groups": "all",
-          "route": "/api/events/:event_id/attachments",
+          "route": "/api/auth/sign_in",
+          "method": "post"
+        },
+        {
+          "description": "Sign Up",
+          "link": "authentication/sign_up.json",
+          "groups": "all",
+          "route": "/api/auth",
+          "method": "post"
+        },
+        {
+          "description": "User confirmation",
+          "link": "authentication/user_confirmation.json",
+          "groups": "all",
+          "route": "/api/auth/confirmation",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Creating a new comment to event",
+          "link": "comments/creating_a_new_comment_to_event.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/comments",
+          "method": "post"
+        },
+        {
+          "description": "Get list of comments to event",
+          "link": "comments/get_list_of_comments_to_event.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/comments",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Creating a new event",
+          "link": "events/creating_a_new_event.json",
+          "groups": "all",
+          "route": "/api/events",
+          "method": "post"
+        },
+        {
+          "description": "Deleting the event",
+          "link": "events/deleting_the_event.json",
+          "groups": "all",
+          "route": "/api/events/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Get list of events where current_user is participant",
+          "link": "events/get_list_of_events_where_current_user_is_participant.json",
+          "groups": "all",
+          "route": "/api/events",
+          "method": "get"
+        },
+        {
+          "description": "Get list of future events by interval",
+          "link": "events/get_list_of_future_events_by_interval.json",
+          "groups": "all",
+          "route": "/api/events",
+          "method": "get"
+        },
+        {
+          "description": "Get list of future events due date",
+          "link": "events/get_list_of_future_events_due_date.json",
+          "groups": "all",
+          "route": "/api/events",
+          "method": "get"
+        },
+        {
+          "description": "Show the event",
+          "link": "events/show_the_event.json",
+          "groups": "all",
+          "route": "/api/events/:id",
+          "method": "get"
+        },
+        {
+          "description": "Updating the event",
+          "link": "events/updating_the_event.json",
+          "groups": "all",
+          "route": "/api/events/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Invitations",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Get list of users that invited to event",
+          "link": "invitations/get_list_of_users_that_invited_to_event.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/invited",
+          "method": "get"
+        },
+        {
+          "description": "Get list of users that not invited to event",
+          "link": "invitations/get_list_of_users_that_not_invited_to_event.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/uninvited",
+          "method": "get"
+        },
+        {
+          "description": "Inviting user to event",
+          "link": "invitations/inviting_user_to_event.json",
+          "groups": "all",
+          "route": "/api/events/:event_id/invitations",
           "method": "post"
         }
       ]

@@ -8,17 +8,22 @@ class Event < ApplicationRecord
   validates :description, length: { maximum: 500 }
   validates_datetime :time, :after => lambda { DateTime.now }
 
-  scope :in_future, (lambda do
-    where("time > ?", DateTime.now)
-  end)
+  scope :by_participant_and_params, (lambda do |participant_id, params|
+    query = event_participants_query
+    query << " AND time < '#{params[:due].to_datetime.to_s(:db)}'" if 
+      params[:due]
+    if params[:interval]
+      due_date = DateTime.now + params[:interval][0..-2].to_i.days
+      query << " AND time < '#{due_date.to_s(:db)}'"
+    end
+    if params[:time]
+      query << " AND time < '#{DateTime.now.to_s(:db)}'" if 
+        params[:time] == "past"
+      query << " AND time > '#{DateTime.now.to_s(:db)}'" if 
+        params[:time] == "future"
+    end
 
-  scope :by_interval, (lambda do |interval|
-    due_date = DateTime.now + interval[0..-2].to_i.days
-    where("time < ?", due_date)
-  end)
-
-  scope :due_date, (lambda do |due_date|
-    where("time < ?", due_date)
+    find_by_sql([query + " ORDER BY time ASC", participant_id, participant_id])
   end)
 
   def uninvited_users
@@ -30,4 +35,17 @@ class Event < ApplicationRecord
       AND 
         NOT users.id = ?", id, organizer.id])
   end
+
+  private
+
+    def self.event_participants_query
+      "
+      SELECT DISTINCT events.id, events.name, events.organizer_id, 
+        events.time, events.place, events.description
+      FROM events 
+      LEFT OUTER JOIN invitations ON invitations.event_id = events.id 
+      WHERE 
+        (invitations.user_id = ? OR organizer_id = ?)
+      "
+    end
 end

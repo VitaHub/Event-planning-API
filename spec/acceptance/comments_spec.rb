@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
-resource "Attachments" do
+resource "Comments" do
   let(:organizer) { create(:user, name: "Organizer") }
   let(:event) { create(:event, organizer: organizer) }
   before(:each) do
@@ -12,33 +12,36 @@ resource "Attachments" do
     header "token-type", auth_headers["token-type"]
     header "uid", auth_headers["uid"]
   end
-  
-  get "/api/events/:event_id/attachments" do
-    let(:event_id) { event.id }
-    before { create(:attachment, event_id: event_id) }
 
-    example "Get list of attachments" do
+  get "/api/events/:event_id/comments" do
+    let(:event_id) { event.id }
+    before do 
+      @comment = create(:comment, event: event, text: "Best Comment ever!")
+    end
+
+    example "Get list of comments to event" do
       do_request
 
       expect(status).to eq 200
       json = JSON.parse(response_body)
       expect(json.length).to eq(1)
-    end
-  end
+      expect(json[0]["text"]).to eq(@comment.text)
+    end    
+  end 
 
-  post "/api/events/:event_id/attachments" do
+  post "/api/events/:event_id/comments" do
     let(:event_id) { event.id }
-    let!(:request_attributes) {
-      { attachment: { user_id: organizer.id, 
-        file: "data:image/png;base64, iVBORw0KGgoAAAANSUhE==" }}
-    }    
 
-    example "Creating an attachment with file for the event" do
-      do_request(request_attributes)
+    let(:request_params) {
+      { comment: { user_id: organizer.id, text: "Best Comment ever!" }}
+    }
+
+    example "Creating a new comment to event" do
+      do_request(request_params)
+
       expect(status).to eq 201
-
-      file = JSON.parse(response_body).fetch("file")
-      expect(file["url"]).to be_present
+      json = JSON.parse(response_body)
+      expect(json["text"]).to eq("Best Comment ever!")
     end
   end
 end

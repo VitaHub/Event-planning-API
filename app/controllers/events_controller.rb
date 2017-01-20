@@ -1,10 +1,12 @@
 class EventsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_event, only: [:show, :update, :destroy]
+  before_action :check_if_organizer, only: [:update, :destroy]
+  before_action :check_if_participant, only: :show
 
   def index
-    @events = Event.in_future.order("time ASC")
-    @events = @events.by_interval(params[:interval]) if params[:interval]
-    @events = @events.due_date(params[:due]) if params[:due]
+    @events = Event.by_participant_and_params(current_user.id, params)
+
     render json: @events
   end
 
@@ -13,7 +15,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(event_params)
+    @event = current_user.own_events.new(event_params)
 
     if @event.save
       render json: @event, status: :created, location: @event
@@ -40,7 +42,19 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:name, :organizer_id, :time, 
-        :place, :description)
+      params.require(:event).permit(:name, :time, :place, :description)
+    end
+
+    def check_if_organizer
+      unless current_user.id == @event.organizer_id
+        raise SecurityError, "Only organizer can update or destroy own events."
+      end
+    end
+
+    def check_if_participant
+      uninvited_users_id = @event.uninvited_users.map { |u| u.id }
+      if uninvited_users_id.include?(current_user.id)
+        raise SecurityError, "Only participant can get the event."
+      end
     end
 end
