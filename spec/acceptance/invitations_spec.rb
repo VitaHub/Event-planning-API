@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
-resource "Invitations" do
+resource "3. Invitations" do
   let(:organizer) { create(:user, name: "Organizer") }
   let(:event) { create(:event, organizer: organizer) }
   let(:participant) { create(:user, name: "Participant") }
@@ -23,7 +23,7 @@ resource "Invitations" do
       { invitation: { user_id: @user.id }}
     }
 
-    example "Inviting user to event" do
+    example "1. Inviting user to event" do
       do_request(request_params)
 
       expect(status).to eq 201
@@ -36,7 +36,7 @@ resource "Invitations" do
   get "/api/events/:event_id/invited" do
     let(:event_id) { event.id }
 
-    example "Get list of users that invited to event" do
+    example "2. Get list of users that invited to the event" do
       do_request
 
       expect(status).to eq 200
@@ -49,7 +49,7 @@ resource "Invitations" do
   get "/api/events/:event_id/uninvited" do
     let(:event_id) { event.id }
 
-    example "Get list of users that not invited to event" do
+    example "3. Get list of users that not invited to the event" do
       do_request
 
       expect(status).to eq 200

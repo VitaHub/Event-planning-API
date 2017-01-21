@@ -1,0 +1,56 @@
+{
+  "resource": "2. Events",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/events",
+  "description": "1. Get list of events where current_user is participant",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/events",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "ZAgLE8P89x_3yoa20yFgLg",
+        "Client": "o8wJj_QQc1f9q-7agohdwA",
+        "Token-Type": "Bearer",
+        "Uid": "test10@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 4313,\n    \"name\": \"First Event\",\n    \"organizer_id\": 8273,\n    \"time\": \"2017-01-23T17:07:15.808Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  },\n  {\n    \"id\": 4314,\n    \"name\": \"Second Event\",\n    \"organizer_id\": 8274,\n    \"time\": \"2017-01-25T17:07:15.814Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "ZAgLE8P89x_3yoa20yFgLg",
+        "token-type": "Bearer",
+        "client": "o8wJj_QQc1f9q-7agohdwA",
+        "expiry": "1486228035",
+        "uid": "test10@test.com",
+        "ETag": "W/\"372aca535559e012eb0b2d36f6126d7f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "_session_id=L2lIOHJPb1pZZVF2T29vbVd0WHhRWmF6OGRxdzFlbCtLQ2Z4RHNIYkRvK1ZtQUYzYlV1UzgwdXFSd0wzUGhVSnNHdjVMd1ZOdUZSanpwaktGZXBSTmRUci9rY0ExdHdDODdCNnNwYzRkVTR4WkZoZkJGZ1RBeW5wenUzMTlhUTE4eERPU04relNrSHJjMldicnNRV0ZUQWhoWkhMZFRqSHhFNU9tUzBMdExvdXJFQmFWQWhDU0psQ1VaYTZFdGp1LS1jMzdXbXRwUlNJN3lHREZxUEJGNTRRPT0%3D--8e996636a70abb0fc93b4b230cac2116966f923d; path=/; HttpOnly",
+        "X-Request-Id": "7f8bc2d4-cfc3-4636-bcc7-22c8beb420b6",
+        "X-Runtime": "0.115765",
+        "Vary": "Origin",
+        "Content-Length": "272"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

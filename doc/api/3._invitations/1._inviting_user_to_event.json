@@ -1,0 +1,56 @@
+{
+  "resource": "3. Invitations",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/events/:event_id/invitations",
+  "description": "1. Inviting user to event",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/events/4326/invitations",
+      "request_body": "{\"invitation\":{\"user_id\":8286}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "hYlbf6CR5A1YAi4FqD4q9w",
+        "Client": "3EXS0qCYBiheUmLKeEdFWg",
+        "Token-Type": "Bearer",
+        "Uid": "test24@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 1079,\n  \"user_id\": 8286,\n  \"event_id\": 4326,\n  \"created_at\": \"2017-01-21T17:07:17.825Z\",\n  \"updated_at\": \"2017-01-21T17:07:17.825Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "hYlbf6CR5A1YAi4FqD4q9w",
+        "token-type": "Bearer",
+        "client": "3EXS0qCYBiheUmLKeEdFWg",
+        "expiry": "1486228037",
+        "uid": "test24@test.com",
+        "ETag": "W/\"148a9175bb2da3808be902f72eef5f16\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "_session_id=K3dyTjZGU2VaTHhDOTFabS9QZVZEdEU0a2VHUWNpcmVIU1lqVkkyaHcrQzNDQU1uQUtRVzlwVGFRRlN2RkU0MmFKVG12ZmlxTldwWTB6RndUK0x1czNzckhrUmVZRFFRSEQyWm5IcnF6cWhreFFrVTJaKzdielN2SmREOTNIZjdUY3plVnR2dGxReVVyakI0RVl6ekZjM2pKdTNSelVBVG05NS9GUEZZODRSeWNlNG9VcDBHcStuZkhzTkJweGlPLS1QTHJndzdndzN6T3g5WEJSdFdtd0tnPT0%3D--ff9cf952fcb441670449f71b320de3f9cddf26c7; path=/; HttpOnly",
+        "X-Request-Id": "365ff656-c9ee-4675-b35a-80d20a1f119d",
+        "X-Runtime": "0.140392",
+        "Vary": "Origin",
+        "Content-Length": "122"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "resource": "Events",
+  "resource": "2. Events",
   "resource_explanation": null,
   "http_method": "DELETE",
   "route": "/api/events/:id",
-  "description": "Deleting the event",
+  "description": "7. Deleting the event",
   "explanation": null,
   "parameters": [
 
@@ -14,14 +14,14 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/events/4025",
+      "request_path": "/api/events/4325",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Access-Token": "9FWNnFRtCXhV3zEglcaO-w",
-        "Client": "pGUUiVnz4sJEn9nraW0mVA",
+        "Access-Token": "jLRDyvi-jq06IxtmziU-aQ",
+        "Client": "IC6HDU6a1eJdjnP6CCWW2A",
         "Token-Type": "Bearer",
-        "Uid": "test23@test.com",
+        "Uid": "test22@test.com",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -35,14 +35,15 @@
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "access-token": "9FWNnFRtCXhV3zEglcaO-w",
+        "access-token": "jLRDyvi-jq06IxtmziU-aQ",
         "token-type": "Bearer",
-        "client": "pGUUiVnz4sJEn9nraW0mVA",
-        "expiry": "1486154829",
-        "uid": "test23@test.com",
+        "client": "IC6HDU6a1eJdjnP6CCWW2A",
+        "expiry": "1486228037",
+        "uid": "test22@test.com",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "b5d601c5-f6a2-41b0-b854-6bab1497cea3",
-        "X-Runtime": "0.110573",
+        "Set-Cookie": "_session_id=cTlqdys4dWpHbVFscUNvVG54bklnTGdBTkhjeWxmd2JKL3Z1ZUxZSEx3VmlxSFBUR05YMFRRKy9WMHdlcDZoZk4wNkdaZDArNEtYNVZHbTJXZjJ4T0V6N241bWphemd3NFJGbHo5c3VPNDhpVGJmTEUyeWcyek92RGNldWxyNkJjRHFNMUdpVy9BYlpMQkVua1hSKzVyd0ZraUcxWTlHUC9EVTFsY1BXaHhvNmJUYjlyZWtXYkJwdDBSMVVzRkhmLS1xRTh1YTZJU1dYQzcrckVvQjloa2VBPT0%3D--dc218c37cb8be57a750304d9c6b0da4e74088de3; path=/; HttpOnly",
+        "X-Request-Id": "d37863f4-9248-4391-b0b7-7ad8c227e06c",
+        "X-Runtime": "0.112600",
         "Vary": "Origin"
       },
       "response_content_type": null,

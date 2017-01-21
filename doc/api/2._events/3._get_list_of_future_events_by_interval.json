@@ -1,0 +1,58 @@
+{
+  "resource": "2. Events",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/events",
+  "description": "3. Get list of future events by interval",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/events?time=future&interval=3d",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "nkxFgtUzR7vFDo5CqM6BNg",
+        "Client": "b0UVCubrFkEd4LYwvOYvCQ",
+        "Token-Type": "Bearer",
+        "Uid": "test16@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "time": "future",
+        "interval": "3d"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 4319,\n    \"name\": \"First Event\",\n    \"organizer_id\": 8279,\n    \"time\": \"2017-01-23T17:07:16.399Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "nkxFgtUzR7vFDo5CqM6BNg",
+        "token-type": "Bearer",
+        "client": "b0UVCubrFkEd4LYwvOYvCQ",
+        "expiry": "1486228036",
+        "uid": "test16@test.com",
+        "ETag": "W/\"6994a98b4164663876397b5ae5a62277\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "_session_id=aFJlK0IweUV4TFFsTkJSclE5Ty9pL1RVblRkR0VZU3p6M2laNk5XbUJ0ZnMrY21lWjJzMjdCSFVaZlhmank3ZXpmYk5Ba1ZQQUR4VVQrNVhBSHZrdUJ3anBndGVWdkpidVR5bWJFWks0NG9lK3k4UnhWSHluNkw5NmRuU2Y2Q0NBTXdYZUNYN3AwOUVycjZYTVRGN0g3aWxOYnBGVzNBU3Iwd3JXb2gxMXFQd1ZEYnZLekRxa05UTXJtU2xqK1hkLS1SUEVuQ1pUSGJMa0w4VThnQTlPbTJnPT0%3D--c4ee4a8a3e5f980ea4c12f36d66b86f005872e7e; path=/; HttpOnly",
+        "X-Request-Id": "62d33427-8fef-46e2-85ac-443d165982c4",
+        "X-Runtime": "0.110745",
+        "Vary": "Origin",
+        "Content-Length": "136"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

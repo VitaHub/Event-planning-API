@@ -20,6 +20,7 @@ gem 'apitome'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'omniauth'
+gem 'omniauth-github'
 
 group :development, :test do
   gem 'byebug', platform: :mri

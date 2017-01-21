@@ -1,9 +1,9 @@
 {
-  "resource": "Invitations",
+  "resource": "1. Authentication",
   "resource_explanation": null,
-  "http_method": "GET",
-  "route": "/api/events/:event_id/uninvited",
-  "description": "Get list of users that not invited to event",
+  "http_method": "DELETE",
+  "route": "/api/auth/sign_out",
+  "description": "5. Log out",
   "explanation": null,
   "parameters": [
 
@@ -13,15 +13,15 @@
   ],
   "requests": [
     {
-      "request_method": "GET",
-      "request_path": "/api/events/4028/uninvited",
+      "request_method": "DELETE",
+      "request_path": "/api/auth/sign_out",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Access-Token": "ATA5bGYgntjYbQJfaBlG3w",
-        "Client": "25IthMs6Rb4_hZrTiamNLg",
+        "Access-Token": "tDpDNZzcb3WAE3wt5RpizQ",
+        "Client": "rUG1P0gwWYiU_ZCMZ9BTbQ",
         "Token-Type": "Bearer",
-        "Uid": "test31@test.com",
+        "Uid": "test6@test.com",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -30,23 +30,19 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 7793,\n    \"name\": \"Just user\"\n  }\n]",
+      "response_body": "{\n  \"success\": true\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "access-token": "ATA5bGYgntjYbQJfaBlG3w",
-        "token-type": "Bearer",
-        "client": "25IthMs6Rb4_hZrTiamNLg",
-        "expiry": "1486154830",
-        "uid": "test31@test.com",
-        "ETag": "W/\"923b2ca6f5085231dc35ffeb0cb067c8\"",
+        "ETag": "W/\"c955e57777ec0d73639dca6748560d00\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "235cab28-0fd7-46db-a836-5f45ddd15c98",
-        "X-Runtime": "0.115766",
+        "Set-Cookie": "_session_id=Z2lxTjFlWVg1VmFLczNhbkxoeVNmMFo0bm94cWFEamVwMXhVMDE2dmxvU3FLa3RRS3o4YzduOHpWbk1zUGRuTGF0OU52MTB3OExDODRDZDk0TjhCUnc9PS0tb2J0ZEtHYjhOWHBjUk4zSEZsYXNtQT09--213e71d12e4cd32c6ee339e332de1bdf2bdd845c; path=/; HttpOnly",
+        "X-Request-Id": "c5816f12-157a-40b1-98e3-a57561200cd4",
+        "X-Runtime": "0.109091",
         "Vary": "Origin",
-        "Content-Length": "32"
+        "Content-Length": "16"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

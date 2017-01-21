@@ -1,0 +1,140 @@
+{
+  "resource": "1. Authentication",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/auth/github",
+  "description": "4. Sign in with GitHub account",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/auth/github",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "tDpDNZzcb3WAE3wt5RpizQ",
+        "Client": "rUG1P0gwWYiU_ZCMZ9BTbQ",
+        "Token-Type": "Bearer",
+        "Uid": "test6@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 301,
+      "response_status_text": "Moved Permanently",
+      "response_body": "<html><body>You are being <a href=\"http://example.org/omniauth/github?resource_class=User\">redirected</a>.</body></html>",
+      "response_headers": {
+        "Location": "http://example.org/omniauth/github?resource_class=User",
+        "Content-Type": "text/html",
+        "Content-Length": "120",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "ee075d7f-32d3-46ce-84f9-6baf15bdc040",
+        "X-Runtime": "0.001312",
+        "Vary": "Origin"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    },
+    {
+      "request_method": "GET",
+      "request_path": "http://example.org/omniauth/github?resource_class=User",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "resource_class": "User"
+      },
+      "request_content_type": null,
+      "response_status": 302,
+      "response_status_text": "Found",
+      "response_body": "Redirecting to http://example.org/omniauth/github/callback?resource_class=User...",
+      "response_headers": {
+        "Content-Length": "81",
+        "Location": "http://example.org/omniauth/github/callback?resource_class=User",
+        "Cache-Control": "no-cache",
+        "Set-Cookie": "_session_id=azRoeEJ3SXg0V0cyQ1RQYzhxajBmTEFxVEFncjExVUJQTzlpUFBCZ3JDYzdNU0FoM3cwdWQ5Y1VWeUtPTE16SXdQRTJzRjRvWlRNM3JteHR2bGtRUjRyY1orQjFFSWNZTGlYcmVsUldXMWxwTnJyUDVCS2dLTHVlWGorVlJESGlrT0JJWm9Zbzc2VGc3NHc5Y1BSVEhDUW90WTNDT05OdVJaN21vNmpJUW00PS0tcnFYMTdBQVhjanY1ZDZHNCtKVm5zUT09--66efc7868ca7fdf5585618f38134e3c16753fa00; path=/; HttpOnly",
+        "X-Request-Id": "b2b47002-7bf7-4e5b-b675-6fdee3448e90",
+        "X-Runtime": "0.002121",
+        "Vary": "Origin"
+      },
+      "response_content_type": null,
+      "curl": null
+    },
+    {
+      "request_method": "GET",
+      "request_path": "http://example.org/omniauth/github/callback?resource_class=User",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": "_session_id=azRoeEJ3SXg0V0cyQ1RQYzhxajBmTEFxVEFncjExVUJQTzlpUFBCZ3JDYzdNU0FoM3cwdWQ5Y1VWeUtPTE16SXdQRTJzRjRvWlRNM3JteHR2bGtRUjRyY1orQjFFSWNZTGlYcmVsUldXMWxwTnJyUDVCS2dLTHVlWGorVlJESGlrT0JJWm9Zbzc2VGc3NHc5Y1BSVEhDUW90WTNDT05OdVJaN21vNmpJUW00PS0tcnFYMTdBQVhjanY1ZDZHNCtKVm5zUT09--66efc7868ca7fdf5585618f38134e3c16753fa00"
+      },
+      "request_query_parameters": {
+        "resource_class": "User"
+      },
+      "request_content_type": null,
+      "response_status": 302,
+      "response_status_text": "Found",
+      "response_body": "<html><body>You are being <a href=\"http://example.org//api/auth/github/callback\">redirected</a>.</body></html>",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org//api/auth/github/callback",
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "Set-Cookie": "_session_id=VGZEZWdYUTU1MnAyOGRVZktFMDFsYlU3Tzh3UklCRjRsRVVrcFNUdXFleFFvcW9ZdWFYdmpReklUSHVLeEEwYytSN1ppbDdGWjliSjAyY1hWWVlaRjZ0bFpNWXl2eU1MeURpM1ZSS3RZU2R2eHVlTkU1RnNpcmFnYTlxcTBaTTJ0WGdNMjlWcEd6aldxRjNqN1RsWnlEWTJxeWdGUmhkYlgyR3dtaE9oK050YzBHWVY4T2JEYk5uNS9pakZCTElWa2o1RTRLTHJhTVpzMkw0RWpuelA4anlaRkNuVEFTTmJ0UklDVnNBQkFKcmV0MjFxaXZVQ09GM3FUdkd3YnZUZGhOZVpkREZwTngrU1hXM0tKOURieWZjQkV5aTM1WVNzNHJjS2N5cE9zTGFVbmUzVWZ2clJXQW55TjF0SlpQbUJoOG53aTRuaUJrTXU0aFN5M1NsN0lkSTJMUGwxVnVqR3ZkOXFmNC9Ea3FMUUl3USsvUjVtNG1YaDNHbHQxVWRxcm1xeVQwb2E0cWo4ejNRMTZ2NWdDdz09LS02bWVoMExGOCtwRHJNRlFaT1I4elRnPT0%3D--5238c721ca06aeba170aea3650bfd80089d4a076; path=/; HttpOnly",
+        "X-Request-Id": "193f314c-d6b0-4c2e-9050-50797f172d90",
+        "X-Runtime": "0.011960",
+        "Vary": "Origin",
+        "Content-Length": "110"
+      },
+      "response_content_type": "text/html; charset=utf-8",
+      "curl": null
+    },
+    {
+      "request_method": "GET",
+      "request_path": "http://example.org//api/auth/github/callback",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": "_session_id=VGZEZWdYUTU1MnAyOGRVZktFMDFsYlU3Tzh3UklCRjRsRVVrcFNUdXFleFFvcW9ZdWFYdmpReklUSHVLeEEwYytSN1ppbDdGWjliSjAyY1hWWVlaRjZ0bFpNWXl2eU1MeURpM1ZSS3RZU2R2eHVlTkU1RnNpcmFnYTlxcTBaTTJ0WGdNMjlWcEd6aldxRjNqN1RsWnlEWTJxeWdGUmhkYlgyR3dtaE9oK050YzBHWVY4T2JEYk5uNS9pakZCTElWa2o1RTRLTHJhTVpzMkw0RWpuelA4anlaRkNuVEFTTmJ0UklDVnNBQkFKcmV0MjFxaXZVQ09GM3FUdkd3YnZUZGhOZVpkREZwTngrU1hXM0tKOURieWZjQkV5aTM1WVNzNHJjS2N5cE9zTGFVbmUzVWZ2clJXQW55TjF0SlpQbUJoOG53aTRuaUJrTXU0aFN5M1NsN0lkSTJMUGwxVnVqR3ZkOXFmNC9Ea3FMUUl3USsvUjVtNG1YaDNHbHQxVWRxcm1xeVQwb2E0cWo4ejNRMTZ2NWdDdz09LS02bWVoMExGOCtwRHJNRlFaT1I4elRnPT0%3D--5238c721ca06aeba170aea3650bfd80089d4a076"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": " ",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "text/plain; charset=utf-8",
+        "access-token": "bNHCJrXO9awL6LmGnKddTQ",
+        "token-type": "Bearer",
+        "client": "tZKf4x4tPWnxeKYdMORH8w",
+        "expiry": "1486228035",
+        "uid": "12345",
+        "ETag": "W/\"36a9e7f1c95b82ffb99743e0c5c4ce95\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "_session_id=MUhlVXJSTG4vbXB5cjNBVzE1Y0pVcWd3c1BlTldGK2ZlQ3pqMmZuZVR5NHpWdGJFWE53Wkw2YmhWTGQzWkwyQ2VoZGdQLzRtZzBCZVNVNm1keTVDWnc9PS0tVXBUNFNpM3duYnJia21YaDloUkRLQT09--f48385ee053a7e5f0a874c6d00c355964da6681d; path=/; HttpOnly",
+        "X-Request-Id": "8b27b0a2-3d72-4d71-9022-d7e9a3decbd1",
+        "X-Runtime": "0.121059",
+        "Vary": "Origin",
+        "Content-Length": "1"
+      },
+      "response_content_type": "text/plain; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

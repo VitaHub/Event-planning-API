@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
-resource "Authentication" do
+resource "1. Authentication" do
   header "Content-Type", "application/json"
   
   post "/api/auth" do
@@ -15,7 +15,7 @@ resource "Authentication" do
       }
     }    
 
-    example "Sign Up" do
+    example "1. Sign Up" do
       do_request(request_attributes)
       expect(status).to eq 200
 
@@ -36,7 +36,7 @@ resource "Authentication" do
       redirect_url: "example.org" }
     }
 
-    example "User confirmation" do
+    example "2. Account confirmation" do
       expect(User.last.confirmed_at).not_to be_present
       do_request(request_attributes)
 
@@ -44,7 +44,6 @@ resource "Authentication" do
       expect(User.last.confirmed_at).to be_present
     end
   end
-
   post "/api/auth/sign_in" do
     let(:user) { create(:user) }
     let!(:request_attributes) {
@@ -54,7 +53,7 @@ resource "Authentication" do
         password_confirmation: "testpass"
       }
     }    
-
+=begin
     example "Sign In from unconfirmed account" do
       do_request(request_attributes)
       expect(status).to eq 401
@@ -62,8 +61,8 @@ resource "Authentication" do
       file = JSON.parse(response_body).fetch("errors")
       expect(file[0]).to match(/A confirmation email was sent/)
     end
-
-    example "Sign In from confirmed account" do
+=end
+    example "3. Sign In" do
       user.confirmed_at = DateTime.now
       user.save!
       do_request(request_attributes)
@@ -88,13 +87,28 @@ resource "Authentication" do
       header "uid", auth_headers["uid"]
     end
 
-    example "Log out" do
+    example "5. Log out" do
       do_request
 
       expect(status).to eq 200
       json = JSON.parse(response_body)
       expect(json["success"]).to eq(true)
       expect(response_headers["access-token"]).not_to be_present
+    end
+  end
+
+  get "/api/auth/github" do
+    example "4. Sign in with GitHub account" do
+      do_request
+
+      expect(status).to eq 301
+      client.get response_headers["Location"]
+      client.get response_headers["Location"]
+      client.get response_headers["Location"]
+
+      expect(status).to eq 200
+      expect(response_headers["access-token"]).to be_present
+      expect(response_headers["client"]).to be_present
     end
   end
 end

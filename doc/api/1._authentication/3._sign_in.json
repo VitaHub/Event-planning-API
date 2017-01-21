@@ -1,9 +1,9 @@
 {
-  "resource": "Authentication",
+  "resource": "1. Authentication",
   "resource_explanation": null,
   "http_method": "POST",
-  "route": "/api/auth",
-  "description": "Sign Up",
+  "route": "/api/auth/sign_in",
+  "description": "3. Sign In",
   "explanation": null,
   "parameters": [
 
@@ -14,8 +14,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/auth",
-      "request_body": "{\"name\":\"TestUser\",\"nickname\":\"testname\",\"email\":\"test@gmail.com\",\"password\":\"testpass\",\"password_confirmation\":\"testpass\"}",
+      "request_path": "/api/auth/sign_in",
+      "request_body": "{\"email\":\"test5@test.com\",\"password\":\"testpass\",\"password_confirmation\":\"testpass\"}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -26,18 +26,23 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"id\": 7766,\n    \"name\": \"TestUser\",\n    \"created_at\": \"2017-01-20T20:47:06.663Z\",\n    \"updated_at\": \"2017-01-20T20:47:06.663Z\",\n    \"provider\": \"email\",\n    \"uid\": \"test@gmail.com\",\n    \"nickname\": \"testname\",\n    \"email\": \"test@gmail.com\"\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": 8267,\n    \"email\": \"test5@test.com\",\n    \"provider\": \"email\",\n    \"uid\": \"test5@test.com\",\n    \"name\": \"MyString\",\n    \"nickname\": null\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e226de7f2bfe8ac197f2c6bc6a9d8c44\"",
+        "access-token": "Utphye0R95v4gwh2MdVyww",
+        "token-type": "Bearer",
+        "client": "-r15S4EWDNlsGXE8aNnOJQ",
+        "expiry": "1486228034",
+        "uid": "test5@test.com",
+        "ETag": "W/\"634b4d1b3a405ca7b4034ead37c4e725\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "10cb7d3a-02e7-428b-b571-42742857d3a8",
-        "X-Runtime": "0.416455",
+        "X-Request-Id": "3724a958-1cc2-4700-8033-cfda628afc05",
+        "X-Runtime": "0.137302",
         "Vary": "Origin",
-        "Content-Length": "226"
+        "Content-Length": "121"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

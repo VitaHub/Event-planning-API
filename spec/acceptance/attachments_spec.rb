@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
-resource "Attachments" do
+resource "5. Attachments" do
   let(:organizer) { create(:user, name: "Organizer") }
   let(:event) { create(:event, organizer: organizer) }
   before(:each) do
@@ -17,7 +17,7 @@ resource "Attachments" do
     let(:event_id) { event.id }
     before { create(:attachment, event_id: event_id) }
 
-    example "Get list of attachments" do
+    example "1. Get list of attachments" do
       do_request
 
       expect(status).to eq 200
@@ -33,7 +33,7 @@ resource "Attachments" do
         file: "data:image/png;base64, iVBORw0KGgoAAAANSUhE==" }}
     }    
 
-    example "Creating an attachment with file for the event" do
+    example "2. Creating an attachment with file for the event" do
       do_request(request_attributes)
       expect(status).to eq 201
 

@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
-resource "Events" do
+resource "2. Events" do
   let(:organizer) { create(:user) }
   before(:each) do
     header "Content-Type", "application/json"
@@ -23,7 +23,7 @@ resource "Events" do
       create(:event, name: "Third Event", time: DateTime.now + 6.days)
     end
 
-    example "Get list of events where current_user is participant" do
+    example "1. Get list of events where current_user is participant" do
       do_request
 
       expect(status).to eq 200
@@ -31,7 +31,7 @@ resource "Events" do
       expect(json.length).to eq(2)
     end
 
-    example "Get list of future events due date" do
+    example "2. Get list of future events due date" do
       request_params = { time: "future",
         due: (DateTime.now + 3.days).to_s(:number) }
       do_request(request_params)
@@ -42,7 +42,7 @@ resource "Events" do
       expect(json[0]["name"]).to eq("First Event")
     end
 
-    example "Get list of future events by interval" do
+    example "3. Get list of future events by interval" do
       request_params = { time: "future", interval: "3d" }
       do_request(request_params)
 
@@ -56,7 +56,7 @@ resource "Events" do
   get "/api/events/:id" do
     let(:id) { create(:event, organizer: organizer, name: "An event").id }
 
-    example "Show the event" do
+    example "4. Show the event" do
       do_request
 
       expect(status).to eq 200
@@ -75,7 +75,7 @@ resource "Events" do
       }
     }
 
-    example "Creating a new event" do
+    example "5. Creating a new event" do
       do_request(request_params)
 
       expect(status).to eq 201
@@ -96,7 +96,7 @@ resource "Events" do
       }
     }
 
-    example "Updating the event" do
+    example "6. Updating the event" do
       do_request(request_params)
 
       expect(status).to eq 200
@@ -109,7 +109,7 @@ resource "Events" do
     let(:event) { create(:event, organizer: organizer, name: "An event") }
     let(:id) { event.id }
 
-    example "Deleting the event" do
+    example "7. Deleting the event" do
       do_request
 
       expect(status).to eq 204

@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
-resource "Comments" do
+resource "4. Comments" do
   let(:organizer) { create(:user, name: "Organizer") }
   let(:event) { create(:event, organizer: organizer) }
   before(:each) do
@@ -19,7 +19,7 @@ resource "Comments" do
       @comment = create(:comment, event: event, text: "Best Comment ever!")
     end
 
-    example "Get list of comments to event" do
+    example "1. Get list of comments to event" do
       do_request
 
       expect(status).to eq 200
@@ -36,7 +36,7 @@ resource "Comments" do
       { comment: { user_id: organizer.id, text: "Best Comment ever!" }}
     }
 
-    example "Creating a new comment to event" do
+    example "2. Creating a new comment to event" do
       do_request(request_params)
 
       expect(status).to eq 201

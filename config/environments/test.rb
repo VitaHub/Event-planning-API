@@ -40,3 +40,6 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
+
+OmniAuth.config.test_mode = true
+OmniAuth.config.add_mock(:github, {:uid => '12345'})

@@ -1,0 +1,57 @@
+{
+  "resource": "2. Events",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/events",
+  "description": "5. Creating a new event",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/events",
+      "request_body": "{\"event\":{\"name\":\"My Event\",\"time\":\"20170131190716\",\"place\":\"London\",\"description\":\"Some Description\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "bOMB-w4ZK3L0GP9sehqkig",
+        "Client": "gne-T91fthiSApY_PzhNAw",
+        "Token-Type": "Bearer",
+        "Uid": "test20@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 4323,\n  \"name\": \"My Event\",\n  \"organizer_id\": 8283,\n  \"time\": \"2017-01-31T19:07:16.000Z\",\n  \"place\": \"London\",\n  \"description\": \"Some Description\",\n  \"created_at\": \"2017-01-21T17:07:17.024Z\",\n  \"updated_at\": \"2017-01-21T17:07:17.024Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org/api/events/4323",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "bOMB-w4ZK3L0GP9sehqkig",
+        "token-type": "Bearer",
+        "client": "gne-T91fthiSApY_PzhNAw",
+        "expiry": "1486228036",
+        "uid": "test20@test.com",
+        "ETag": "W/\"d10d4f8cb50f9c09a18a3cf62393974b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "_session_id=anZ2YWpXS0E2TE1KTEpmNGdaNWZwZnVUZjhuZHpHK1owZ01UTEhDK2k1U0VsbjlpTEtBeUE0NWVBQUk4OFNhR2JCWDFQbjYwQVcva2NYYnJwZmNEWTI5NVZFU0psZnJNZ1BGVmFBYTQ2Y2VUb2dPQUJpQ292a2Y2dFlxTmNXMm5SOGwycU9CK0wzVnE3RDNGNnZnSXBHRnpJeE5uRUpwdFNqZnB4dzNZRHM5NG5qOEw3bU1pVVhibHpzOEE5UW52LS11NGtaSUZGZk5xai8xcjNiM3gvR1RBPT0%3D--fb96ce7a4c04108cad667f19f5d1560a2418724a; path=/; HttpOnly",
+        "X-Request-Id": "fde21c25-3beb-4652-9390-0e6e6e4b7b18",
+        "X-Runtime": "0.130801",
+        "Vary": "Origin",
+        "Content-Length": "213"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resource": "5. Attachments",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/events/:event_id/attachments",
+  "description": "1. Get list of attachments",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/events/4309/attachments",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Access-Token": "jt18B-kjGhzXZ8_4qK3cNw",
+        "Client": "hIhk2Bk02CDIdYbLKNHFAQ",
+        "Token-Type": "Bearer",
+        "Uid": "test1@test.com",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 328,\n    \"user_id\": 8263,\n    \"event_id\": 4309,\n    \"file\": {\n      \"url\": \"/uploads/attachment/file/328/file.png\"\n    },\n    \"created_at\": \"2017-01-21T17:07:13.543Z\",\n    \"updated_at\": \"2017-01-21T17:07:13.543Z\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "access-token": "jt18B-kjGhzXZ8_4qK3cNw",
+        "token-type": "Bearer",
+        "client": "hIhk2Bk02CDIdYbLKNHFAQ",
+        "expiry": "1486228033",
+        "uid": "test1@test.com",
+        "ETag": "W/\"0f5ed808b3be13e41cfffe0f87da7ec6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "_session_id=VGg4R3hoTzFydmZDamZ2VERHMk1qVFlpM0VNTnZuOThUb1ZiL2MwR1VRdG9BZ0p6akVlb2JLMHJFOHJvK2taYmhSVEJWTVlXeEQzK1ZweGhTY3ZaS096UVlHZkpneWw3N1RDZjVYM1M5YTFHTnBXVDB4S0tLd210bUJoODh5QVViOWlYSlJJZnRPL01PaUhWZVJicGtoUE93SG1HbUc1MnNqTWJyV0dpRnJFaG5RQWpnc0lxL3pRSHFTSythd09SLS0rZC9ZOUxjeWpWazAvWE1iRHRZcXZnPT0%3D--741fac344c40fb625f4714b9845d7ec9c4a601d1; path=/; HttpOnly",
+        "X-Request-Id": "cd28a6b3-d07f-4b63-88fe-50d4c840ffa6",
+        "X-Runtime": "0.184395",
+        "Vary": "Origin",
+        "Content-Length": "178"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
