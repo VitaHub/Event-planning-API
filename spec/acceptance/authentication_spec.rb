@@ -17,8 +17,8 @@ resource "1. Authentication" do
 
     example "1. Sign Up" do
       do_request(request_attributes)
-      expect(status).to eq 200
 
+      expect(status).to eq 200
       file = JSON.parse(response_body).fetch("data")
       expect(file["name"]).to eq("TestUser")
       expect(file["id"]).to be_present
