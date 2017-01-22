@@ -14,12 +14,12 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/events?time=future&due=20170125184830",
+      "request_path": "/api/events?time=future&due=20170125212243",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Access-Token": "3_7GD5qJWGjfbQ4PARbSgw",
-        "Client": "SdROzN_TyEv43PZAQC8l2g",
+        "Access-Token": "iqXW5YaOgNWHKaERXRCkAA",
+        "Client": "XvktlOQb7BvtexwcxoeAaA",
         "Token-Type": "Bearer",
         "Uid": "test16@test.com",
         "Host": "example.org",
@@ -27,29 +27,29 @@
       },
       "request_query_parameters": {
         "time": "future",
-        "due": "20170125184830"
+        "due": "20170125212243"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 895,\n    \"name\": \"First Event\",\n    \"organizer_id\": 1625,\n    \"time\": \"2017-01-24T16:48:30.950Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 1060,\n    \"name\": \"First Event\",\n    \"organizer_id\": 1948,\n    \"time\": \"2017-01-24T19:22:43.724Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "access-token": "3_7GD5qJWGjfbQ4PARbSgw",
+        "access-token": "iqXW5YaOgNWHKaERXRCkAA",
         "token-type": "Bearer",
-        "client": "SdROzN_TyEv43PZAQC8l2g",
-        "expiry": "1486313310",
+        "client": "XvktlOQb7BvtexwcxoeAaA",
+        "expiry": "1486322563",
         "uid": "test16@test.com",
-        "ETag": "W/\"d83fdf415de9b5618f29f896b69db357\"",
+        "ETag": "W/\"498fc330df0a2b3691486526a19d3935\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "Set-Cookie": "_session_id=eHltL1o4aGxxM3c4YjJjOWFUdG4xN0RRY3BNMGpOZ0dTRkRnN3ZRa1k1dXJ1a21xek5WS1J0MWNUQjAyRUM4ZDFXQ3ljZ2FMT1IyV1libGYzR2tUTEZvZHNTMy9SR0FVakxxb1dXTzRwTEtWRGo3WlFpWldna05wdjI0YjhCcVdkNndnNUV5d1doVmZFWDhiR1I3SHA3YitGOVdFNUxONzV1dW1qN3Q2SHhyMHNSNU5CMUxFQ2pOS3RnTjBRWkZvLS1FeFRtV21NY0xSQy94OFZJQTdKaFNRPT0%3D--1e869e43d8162f9764d418ab79b44b9096a81b70; path=/; HttpOnly",
-        "X-Request-Id": "d2beb9e7-d80d-4b72-95b6-3e67213d079d",
-        "X-Runtime": "0.112332",
+        "Set-Cookie": "_session_id=dFFoYy9UOWFXeVF2TU5qamlnTUZKekU4dWJNc2hCNjJXcEVOOEJOZDhpTlh2OTJ3TjU5dVdDeHlmM01tajUyVGlGa081UlhNSSswVzc2VUtDcFl5NnN2WUJjcTJCYndqekRhVG01alczL0pXYUgxaVVYMDgyQjJJVDVLTTZsZVZZeFVrQlBnWi9VNUpxWUU4OTBmVllmblphQmdoeTZ6bmIzamQzZkEreTRsRHV6R3UrN3J5WXZSYm1RSTFwRzBwLS1LZ1d2VUY1VlBEV1hrSlgvQlJnZ0FRPT0%3D--943f70da2a68d32909931b1cf1893070805de062; path=/; HttpOnly",
+        "X-Request-Id": "57bc5bbc-9756-4961-96c6-68e7d245e55a",
+        "X-Runtime": "0.112837",
         "Vary": "Origin",
-        "Content-Length": "135"
+        "Content-Length": "136"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

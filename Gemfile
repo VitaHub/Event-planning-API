@@ -22,6 +22,8 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'public_activity'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'

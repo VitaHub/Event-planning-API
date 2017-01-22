@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "apitome/docs#index"
   scope '/api' do
     mount_devise_token_auth_for 'User', at: 'auth', controllers: {
       omniauth_callbacks:  'overrides/omniauth_callbacks'

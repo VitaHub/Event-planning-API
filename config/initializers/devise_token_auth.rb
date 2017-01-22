@@ -24,7 +24,8 @@ DeviseTokenAuth.setup do |config|
   # redirect successful authentications to '/omniauth/github/callback'
   # config.omniauth_prefix = "/omniauth"
 
-  config.default_confirm_success_url = "localhost:3000/api/events"
+  config.default_confirm_success_url = 
+    Rails.application.secrets.default_confirm_success_url
 
   # By default sending current password is not needed for the password update.
   # Uncomment to enforce current_password param to be checked before all
