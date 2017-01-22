@@ -18,3 +18,5 @@ GET "/api/events?interval=2d");
 - create comments to event (for participants only);
 - get activity feed (latest changes of events, where current_user is participant; 
 new comments, file attachments and invitations to this events).
+
+You can find deployed API at the following address: https://event-planning-api.herokuapp.com/api
