@@ -14,42 +14,42 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/events?time=future&due=20170124190716",
+      "request_path": "/api/events?time=future&due=20170125184830",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Access-Token": "Aokddo-sB4rv7tYhq3Y1hg",
-        "Client": "fCFYI09LrienIjRsUhCijQ",
+        "Access-Token": "3_7GD5qJWGjfbQ4PARbSgw",
+        "Client": "SdROzN_TyEv43PZAQC8l2g",
         "Token-Type": "Bearer",
-        "Uid": "test13@test.com",
+        "Uid": "test16@test.com",
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
         "time": "future",
-        "due": "20170124190716"
+        "due": "20170125184830"
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 4316,\n    \"name\": \"First Event\",\n    \"organizer_id\": 8276,\n    \"time\": \"2017-01-23T17:07:16.120Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 895,\n    \"name\": \"First Event\",\n    \"organizer_id\": 1625,\n    \"time\": \"2017-01-24T16:48:30.950Z\",\n    \"place\": \"Lviv\",\n    \"description\": \"Some description\"\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "access-token": "Aokddo-sB4rv7tYhq3Y1hg",
+        "access-token": "3_7GD5qJWGjfbQ4PARbSgw",
         "token-type": "Bearer",
-        "client": "fCFYI09LrienIjRsUhCijQ",
-        "expiry": "1486228036",
-        "uid": "test13@test.com",
-        "ETag": "W/\"8e8007b18fde1ff22931fbed81107ec5\"",
+        "client": "SdROzN_TyEv43PZAQC8l2g",
+        "expiry": "1486313310",
+        "uid": "test16@test.com",
+        "ETag": "W/\"d83fdf415de9b5618f29f896b69db357\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "Set-Cookie": "_session_id=eWRTVzR3d01PbGh3UDFNRUN2eU9ERlV6ZmlUd3Fkdzk0TEI1Q0pvcnN6Z3U1SEdmVzZLbXk4M1FBUmZPb1BQZGw4Sy9oWlFqUWJQTFloM1R2cXBwaTAvMUVTdGhtQkl2SGNFQmJFNkdGQjRXVnRPUUJUdkptVjdqWUVlczQzeWovcjFVUUtIMHd6T0dIWUtNeERsM250eGVkNUFMNEM0N2tsVmNwTTZvT0hGTWU1aHkxNXFZMEtKVUY0RzYyK2JOLS1BcFhUVUNuUFRsNnUxVGJtVG9laUZBPT0%3D--d99ad1690239197fed95a3d4c4b459888db589aa; path=/; HttpOnly",
-        "X-Request-Id": "58ff1fa3-f0f1-4d88-aa32-bf536c760884",
-        "X-Runtime": "0.111991",
+        "Set-Cookie": "_session_id=eHltL1o4aGxxM3c4YjJjOWFUdG4xN0RRY3BNMGpOZ0dTRkRnN3ZRa1k1dXJ1a21xek5WS1J0MWNUQjAyRUM4ZDFXQ3ljZ2FMT1IyV1libGYzR2tUTEZvZHNTMy9SR0FVakxxb1dXTzRwTEtWRGo3WlFpWldna05wdjI0YjhCcVdkNndnNUV5d1doVmZFWDhiR1I3SHA3YitGOVdFNUxONzV1dW1qN3Q2SHhyMHNSNU5CMUxFQ2pOS3RnTjBRWkZvLS1FeFRtV21NY0xSQy94OFZJQTdKaFNRPT0%3D--1e869e43d8162f9764d418ab79b44b9096a81b70; path=/; HttpOnly",
+        "X-Request-Id": "d2beb9e7-d80d-4b72-95b6-3e67213d079d",
+        "X-Runtime": "0.112332",
         "Vary": "Origin",
-        "Content-Length": "136"
+        "Content-Length": "135"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

@@ -10,5 +10,7 @@ Rails.application.routes.draw do
       resources :comments, only: [:index, :create]
       resources :attachments, only: [:index, :create]
     end
+    resources :users, only: :show
+    get "feed" => "activities#index"
   end
 end

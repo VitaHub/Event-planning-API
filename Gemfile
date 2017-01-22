@@ -12,7 +12,6 @@ gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'validates_timeliness',     '~> 4.0'
 gem 'rails-controller-testing'
-# gem 'database_cleaner'
 gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-base64'
 gem 'rspec_api_documentation'
@@ -21,6 +20,7 @@ gem 'devise'
 gem 'devise_token_auth'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'public_activity'
 
 group :development, :test do
   gem 'byebug', platform: :mri

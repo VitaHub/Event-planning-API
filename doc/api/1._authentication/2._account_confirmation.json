@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/auth/confirmation?config=default&confirmation_token=8cMyCV9N5SA-y9CzYTCJ&redirect_url=example.org",
+      "request_path": "/api/auth/confirmation?config=default&confirmation_token=rMe74k-bWjqrXxqxi9v3&redirect_url=example.org",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -23,22 +23,22 @@
       },
       "request_query_parameters": {
         "config": "default",
-        "confirmation_token": "8cMyCV9N5SA-y9CzYTCJ",
+        "confirmation_token": "rMe74k-bWjqrXxqxi9v3",
         "redirect_url": "example.org"
       },
       "request_content_type": "application/json",
       "response_status": 302,
       "response_status_text": "Found",
-      "response_body": "<html><body>You are being <a href=\"http://example.org://example.org?account_confirmation_success=true&amp;client_id=c2U0b1T85HXGbgt24yKY3A&amp;config=default&amp;expiry=1486228034&amp;token=DjFx4TkyoXt5fcArXgi6IA&amp;uid=test4%40test.com\">redirected</a>.</body></html>",
+      "response_body": "<html><body>You are being <a href=\"http://example.org://example.org?account_confirmation_success=true&amp;client_id=c5Lati9UM9AwjOsrh400ag&amp;config=default&amp;expiry=1486313309&amp;token=k-UI6xqR0B1PEvFcBgXFdA&amp;uid=test7%40test.com\">redirected</a>.</body></html>",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org://example.org?account_confirmation_success=true&client_id=c2U0b1T85HXGbgt24yKY3A&config=default&expiry=1486228034&token=DjFx4TkyoXt5fcArXgi6IA&uid=test4%40test.com",
+        "Location": "http://example.org://example.org?account_confirmation_success=true&client_id=c5Lati9UM9AwjOsrh400ag&config=default&expiry=1486313309&token=k-UI6xqR0B1PEvFcBgXFdA&uid=test7%40test.com",
         "Content-Type": "text/html; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "c62a430c-456f-461f-9eda-f79ce96e5ec6",
-        "X-Runtime": "0.123578",
+        "X-Request-Id": "f26414a5-523d-45f4-b23f-9c8cef094f30",
+        "X-Runtime": "0.124026",
         "Vary": "Origin",
         "Content-Length": "268"
       },

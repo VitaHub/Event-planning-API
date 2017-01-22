@@ -162,6 +162,32 @@
           "method": "post"
         }
       ]
+    },
+    {
+      "name": "6. Users",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "1. Show the user",
+          "link": "6._users/1._show_the_user.json",
+          "groups": "all",
+          "route": "/api/users/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "7. Feed",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "1. Get feed",
+          "link": "7._feed/1._get_feed.json",
+          "groups": "all",
+          "route": "/api/feed",
+          "method": "get"
+        }
+      ]
     }
   ]
 }

@@ -33,7 +33,7 @@ resource "4. Comments" do
     let(:event_id) { event.id }
 
     let(:request_params) {
-      { comment: { user_id: organizer.id, text: "Best Comment ever!" }}
+      { comment: { text: "Best Comment ever!" }}
     }
 
     example "2. Creating a new comment to event" do
@@ -41,7 +41,7 @@ resource "4. Comments" do
 
       expect(status).to eq 201
       json = JSON.parse(response_body)
-      expect(json["text"]).to eq("Best Comment ever!")
+      expect(json["text"]).to eq(request_params[:comment][:text])
     end
   end
 end

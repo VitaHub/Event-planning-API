@@ -5,13 +5,16 @@ class CommentsController < ApplicationController
 
   def index
     @comments = @event.comments.order("created_at ASC")
+    
     render json: @comments
   end
 
   def create
-    @comment = @event.comments.new(comment_params)
+    @comment = @event.comments.new(comment_params.merge(user_id: current_user.id))
 
     if @comment.save
+      @comment.create_activity :create, owner: current_user, 
+        event_id: @event.id, recipient: @comment
       render json: @comment, status: :created
     else
       render json: @comment.errors, status: :unprocessable_entity
@@ -20,7 +23,7 @@ class CommentsController < ApplicationController
 
   private
     def comment_params
-      params.require(:comment).permit(:text, :user_id)
+      params.require(:comment).permit(:text)
     end
 
     def set_event
@@ -28,8 +31,7 @@ class CommentsController < ApplicationController
     end
 
     def check_if_participant
-      uninvited_users_id = @event.uninvited_users.map { |u| u.id }
-      if uninvited_users_id.include?(current_user.id)
+      unless @event.participants_ids.include?(current_user.id)
         raise SecurityError, "Only participant of event can create 
           comment or get the list of comments."
       end

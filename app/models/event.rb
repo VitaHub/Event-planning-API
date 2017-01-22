@@ -1,4 +1,6 @@
 class Event < ApplicationRecord
+  include PublicActivity::Common
+
   belongs_to :organizer, class_name: "User"
   has_many :invitations
   has_many :invited_users, through: :invitations, source: :user 
@@ -26,14 +28,13 @@ class Event < ApplicationRecord
     find_by_sql([query + " ORDER BY time ASC", participant_id, participant_id])
   end)
 
+  def participants_ids
+    participants_ids = invited_users.map { |u| u.id }
+    participants_ids << organizer_id
+  end
+
   def uninvited_users
-    User.find_by_sql(["SELECT DISTINCT users.id, users.name 
-      FROM users
-      LEFT OUTER JOIN invitations ON invitations.user_id = users.id 
-      WHERE 
-        (NOT invitations.event_id = ? OR invitations.event_id IS NULL) 
-      AND 
-        NOT users.id = ?", id, organizer.id])
+    User.where.not(id: participants_ids)
   end
 
   private

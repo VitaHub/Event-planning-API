@@ -1,4 +1,6 @@
 class Comment < ApplicationRecord
+  include PublicActivity::Common
+  
   belongs_to :user
   belongs_to :event
 

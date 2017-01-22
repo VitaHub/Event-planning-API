@@ -10,6 +10,8 @@ class InvitationsController < ApplicationController
     if @event.organizer_id == user_id
       render json: { status: 500, error: "The user is the organizer of the event."}
     elsif @invitation.save
+      @invitation.create_activity :create, owner: current_user, 
+        event_id: @event.id, recipient: @invitation.user
       render json: @invitation, status: :created
     else
       render json: @invitation.errors, status: :unprocessable_entity
@@ -34,8 +36,7 @@ class InvitationsController < ApplicationController
     end
 
     def check_if_participant
-      uninvited_users_id = @event.uninvited_users.map { |u| u.id }
-      if uninvited_users_id.include?(current_user.id)
+      unless @event.participants_ids.include?(current_user.id)
         raise SecurityError, "Only participant can invite to the event."
       end
     end

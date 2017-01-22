@@ -18,10 +18,10 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Access-Token": "tDpDNZzcb3WAE3wt5RpizQ",
-        "Client": "rUG1P0gwWYiU_ZCMZ9BTbQ",
+        "Access-Token": "vFwtxaG7PqltRmoY0YpOZA",
+        "Client": "YFYoagkZvD0DeGVJoq_sZA",
         "Token-Type": "Bearer",
-        "Uid": "test6@test.com",
+        "Uid": "test9@test.com",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -36,8 +36,8 @@
         "Content-Type": "text/html",
         "Content-Length": "120",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "ee075d7f-32d3-46ce-84f9-6baf15bdc040",
-        "X-Runtime": "0.001312",
+        "X-Request-Id": "24fbb4f4-4398-4e8c-9e6e-21009daeb4f4",
+        "X-Runtime": "0.001373",
         "Vary": "Origin"
       },
       "response_content_type": "text/html",
@@ -62,9 +62,9 @@
         "Content-Length": "81",
         "Location": "http://example.org/omniauth/github/callback?resource_class=User",
         "Cache-Control": "no-cache",
-        "Set-Cookie": "_session_id=azRoeEJ3SXg0V0cyQ1RQYzhxajBmTEFxVEFncjExVUJQTzlpUFBCZ3JDYzdNU0FoM3cwdWQ5Y1VWeUtPTE16SXdQRTJzRjRvWlRNM3JteHR2bGtRUjRyY1orQjFFSWNZTGlYcmVsUldXMWxwTnJyUDVCS2dLTHVlWGorVlJESGlrT0JJWm9Zbzc2VGc3NHc5Y1BSVEhDUW90WTNDT05OdVJaN21vNmpJUW00PS0tcnFYMTdBQVhjanY1ZDZHNCtKVm5zUT09--66efc7868ca7fdf5585618f38134e3c16753fa00; path=/; HttpOnly",
-        "X-Request-Id": "b2b47002-7bf7-4e5b-b675-6fdee3448e90",
-        "X-Runtime": "0.002121",
+        "Set-Cookie": "_session_id=TG9KL2ZJVVFFYlFNNjZQSUttdjZsNnpjdTcyYzd5Uk5kV2k3TzVaRXJrUjZQRllhS2xrSm1UVVFlY2dQaFBpcHptbjZWeTErZERuZHVMTEx3OVk0VXpSaGxLRC8yM1lzMEpXRjNuZmJEdTBJcVB6RXpwRTg0TG45QVFSWER0RWVNTDVLeXNiM1o0TVRaakNmUDdVSERnQkJvT1ZNcjNaa0VTMXZEL3B2blBrPS0tMzFqV0c4SVRkZk5oVXBreXJTRHZRUT09--5348ae21c96054d78ea8dfcb491c1f4393a2167a; path=/; HttpOnly",
+        "X-Request-Id": "6b692d1c-8b77-4a75-921b-da7db8a859d3",
+        "X-Runtime": "0.002034",
         "Vary": "Origin"
       },
       "response_content_type": null,
@@ -76,7 +76,7 @@
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
-        "Cookie": "_session_id=azRoeEJ3SXg0V0cyQ1RQYzhxajBmTEFxVEFncjExVUJQTzlpUFBCZ3JDYzdNU0FoM3cwdWQ5Y1VWeUtPTE16SXdQRTJzRjRvWlRNM3JteHR2bGtRUjRyY1orQjFFSWNZTGlYcmVsUldXMWxwTnJyUDVCS2dLTHVlWGorVlJESGlrT0JJWm9Zbzc2VGc3NHc5Y1BSVEhDUW90WTNDT05OdVJaN21vNmpJUW00PS0tcnFYMTdBQVhjanY1ZDZHNCtKVm5zUT09--66efc7868ca7fdf5585618f38134e3c16753fa00"
+        "Cookie": "_session_id=TG9KL2ZJVVFFYlFNNjZQSUttdjZsNnpjdTcyYzd5Uk5kV2k3TzVaRXJrUjZQRllhS2xrSm1UVVFlY2dQaFBpcHptbjZWeTErZERuZHVMTEx3OVk0VXpSaGxLRC8yM1lzMEpXRjNuZmJEdTBJcVB6RXpwRTg0TG45QVFSWER0RWVNTDVLeXNiM1o0TVRaakNmUDdVSERnQkJvT1ZNcjNaa0VTMXZEL3B2blBrPS0tMzFqV0c4SVRkZk5oVXBreXJTRHZRUT09--5348ae21c96054d78ea8dfcb491c1f4393a2167a"
       },
       "request_query_parameters": {
         "resource_class": "User"
@@ -92,9 +92,9 @@
         "Location": "http://example.org//api/auth/github/callback",
         "Content-Type": "text/html; charset=utf-8",
         "Cache-Control": "no-cache",
-        "Set-Cookie": "_session_id=VGZEZWdYUTU1MnAyOGRVZktFMDFsYlU3Tzh3UklCRjRsRVVrcFNUdXFleFFvcW9ZdWFYdmpReklUSHVLeEEwYytSN1ppbDdGWjliSjAyY1hWWVlaRjZ0bFpNWXl2eU1MeURpM1ZSS3RZU2R2eHVlTkU1RnNpcmFnYTlxcTBaTTJ0WGdNMjlWcEd6aldxRjNqN1RsWnlEWTJxeWdGUmhkYlgyR3dtaE9oK050YzBHWVY4T2JEYk5uNS9pakZCTElWa2o1RTRLTHJhTVpzMkw0RWpuelA4anlaRkNuVEFTTmJ0UklDVnNBQkFKcmV0MjFxaXZVQ09GM3FUdkd3YnZUZGhOZVpkREZwTngrU1hXM0tKOURieWZjQkV5aTM1WVNzNHJjS2N5cE9zTGFVbmUzVWZ2clJXQW55TjF0SlpQbUJoOG53aTRuaUJrTXU0aFN5M1NsN0lkSTJMUGwxVnVqR3ZkOXFmNC9Ea3FMUUl3USsvUjVtNG1YaDNHbHQxVWRxcm1xeVQwb2E0cWo4ejNRMTZ2NWdDdz09LS02bWVoMExGOCtwRHJNRlFaT1I4elRnPT0%3D--5238c721ca06aeba170aea3650bfd80089d4a076; path=/; HttpOnly",
-        "X-Request-Id": "193f314c-d6b0-4c2e-9050-50797f172d90",
-        "X-Runtime": "0.011960",
+        "Set-Cookie": "_session_id=U3phOXlJejY2L0VKMUR4ckcxZ2VjcWw4cXBsSzF6SzVwUk5rSW05N0ZRb0Z0M200VVJnTXpFSTByakd3bi9wMzhZQkFCOFRxeFpGcFFqeHBIOWRKZzFURmY2UHBVUEdtUExOeXJVc2pmK3VyYko3Z0tMelcwd2FkTXB4bUZZV254SVRPKzBjbHpESmRzNXc4ZzFHYTV2L2FIL1BQSTVoMTJxeEpvSnIzVEw0RHBCdGJuTFA5c3RuUWsvTVlrOHpyVWQ0cXVJcDVrQWtFMmtFc1pLaDBWZjlyYWRnYmV2djNPNW0yZm1icGVrazJtaDl1MktmMVJXQlIzdWdoeDEvK2MrTzFvaXVTZXZEVGlTbTlMSjdLMnZTOUJCL0NmUTFBZmkxOWxvYzJkNVBacUFDUnJGUVVTaGFBZEc1VHhERUNYSWlDKzN0TlVRWGJEUSs4MjhkSlBIYVhLTFBpWFB2cEsrYnJuVEwzN2pXSUtnM2VGQzFGMDd4cGFjRm1UOUdRalJEeVNhWC8wbHcrWmR3WXZOQ01rZz09LS1pUVBKQXVtdUxwMkpHNDZQMmwvMkNnPT0%3D--5e0b4360167a931812d0b16552f8901d29619796; path=/; HttpOnly",
+        "X-Request-Id": "ac393281-fc8b-44be-828e-6319d79c24dc",
+        "X-Runtime": "0.012042",
         "Vary": "Origin",
         "Content-Length": "110"
       },
@@ -107,7 +107,7 @@
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
-        "Cookie": "_session_id=VGZEZWdYUTU1MnAyOGRVZktFMDFsYlU3Tzh3UklCRjRsRVVrcFNUdXFleFFvcW9ZdWFYdmpReklUSHVLeEEwYytSN1ppbDdGWjliSjAyY1hWWVlaRjZ0bFpNWXl2eU1MeURpM1ZSS3RZU2R2eHVlTkU1RnNpcmFnYTlxcTBaTTJ0WGdNMjlWcEd6aldxRjNqN1RsWnlEWTJxeWdGUmhkYlgyR3dtaE9oK050YzBHWVY4T2JEYk5uNS9pakZCTElWa2o1RTRLTHJhTVpzMkw0RWpuelA4anlaRkNuVEFTTmJ0UklDVnNBQkFKcmV0MjFxaXZVQ09GM3FUdkd3YnZUZGhOZVpkREZwTngrU1hXM0tKOURieWZjQkV5aTM1WVNzNHJjS2N5cE9zTGFVbmUzVWZ2clJXQW55TjF0SlpQbUJoOG53aTRuaUJrTXU0aFN5M1NsN0lkSTJMUGwxVnVqR3ZkOXFmNC9Ea3FMUUl3USsvUjVtNG1YaDNHbHQxVWRxcm1xeVQwb2E0cWo4ejNRMTZ2NWdDdz09LS02bWVoMExGOCtwRHJNRlFaT1I4elRnPT0%3D--5238c721ca06aeba170aea3650bfd80089d4a076"
+        "Cookie": "_session_id=U3phOXlJejY2L0VKMUR4ckcxZ2VjcWw4cXBsSzF6SzVwUk5rSW05N0ZRb0Z0M200VVJnTXpFSTByakd3bi9wMzhZQkFCOFRxeFpGcFFqeHBIOWRKZzFURmY2UHBVUEdtUExOeXJVc2pmK3VyYko3Z0tMelcwd2FkTXB4bUZZV254SVRPKzBjbHpESmRzNXc4ZzFHYTV2L2FIL1BQSTVoMTJxeEpvSnIzVEw0RHBCdGJuTFA5c3RuUWsvTVlrOHpyVWQ0cXVJcDVrQWtFMmtFc1pLaDBWZjlyYWRnYmV2djNPNW0yZm1icGVrazJtaDl1MktmMVJXQlIzdWdoeDEvK2MrTzFvaXVTZXZEVGlTbTlMSjdLMnZTOUJCL0NmUTFBZmkxOWxvYzJkNVBacUFDUnJGUVVTaGFBZEc1VHhERUNYSWlDKzN0TlVRWGJEUSs4MjhkSlBIYVhLTFBpWFB2cEsrYnJuVEwzN2pXSUtnM2VGQzFGMDd4cGFjRm1UOUdRalJEeVNhWC8wbHcrWmR3WXZOQ01rZz09LS1pUVBKQXVtdUxwMkpHNDZQMmwvMkNnPT0%3D--5e0b4360167a931812d0b16552f8901d29619796"
       },
       "request_query_parameters": {
       },
@@ -120,16 +120,16 @@
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "text/plain; charset=utf-8",
-        "access-token": "bNHCJrXO9awL6LmGnKddTQ",
+        "access-token": "WgFLJI-GR0J0zJXtrTUd1Q",
         "token-type": "Bearer",
-        "client": "tZKf4x4tPWnxeKYdMORH8w",
-        "expiry": "1486228035",
+        "client": "x51DrbK0mcgOwpZ-bf1prA",
+        "expiry": "1486313309",
         "uid": "12345",
         "ETag": "W/\"36a9e7f1c95b82ffb99743e0c5c4ce95\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "Set-Cookie": "_session_id=MUhlVXJSTG4vbXB5cjNBVzE1Y0pVcWd3c1BlTldGK2ZlQ3pqMmZuZVR5NHpWdGJFWE53Wkw2YmhWTGQzWkwyQ2VoZGdQLzRtZzBCZVNVNm1keTVDWnc9PS0tVXBUNFNpM3duYnJia21YaDloUkRLQT09--f48385ee053a7e5f0a874c6d00c355964da6681d; path=/; HttpOnly",
-        "X-Request-Id": "8b27b0a2-3d72-4d71-9022-d7e9a3decbd1",
-        "X-Runtime": "0.121059",
+        "Set-Cookie": "_session_id=bCtvdkl5aUVFaWFWckJUNnI3L1c1QnViQ3lMK1ExKzlwWDRlMkF5bkJIS2ZpM01JUEkxUFpqcmhyb0VCNzJsQ2dTeTA1T3ZFYlFTd1pDUnhhNlNpb0E9PS0tOGROOHYxazZuaHl2bXJMSU1sdlNDUT09--99104a2f8f32fa79d026b4ef016695f51e8e73f0; path=/; HttpOnly",
+        "X-Request-Id": "5891dc09-e306-402a-8ddc-65bae3f1c5b8",
+        "X-Runtime": "0.120331",
         "Vary": "Origin",
         "Content-Length": "1"
       },

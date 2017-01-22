@@ -18,6 +18,8 @@ class EventsController < ApplicationController
     @event = current_user.own_events.new(event_params)
 
     if @event.save
+      @event.create_activity :create, owner: current_user, 
+        event_id: @event.id, recipient: @event
       render json: @event, status: :created, location: @event
     else
       render json: @event.errors, status: :unprocessable_entity
@@ -26,6 +28,8 @@ class EventsController < ApplicationController
 
   def update
     if @event.update(event_params)
+      @event.create_activity :update, owner: current_user, 
+        event_id: @event.id, recipient: @event
       render json: @event
     else
       render json: @event.errors, status: :unprocessable_entity
@@ -33,7 +37,15 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    event_id = @event.id
+    parameters = { event: {
+      name: @event.name, 
+      time: @event.time, 
+      place: @event.place 
+    }}
     @event.destroy
+    current_user.create_activity :destroy, owner: current_user, 
+      event_id: event_id, parameters: parameters, key: "event.destroy"
   end
 
   private
@@ -52,8 +64,7 @@ class EventsController < ApplicationController
     end
 
     def check_if_participant
-      uninvited_users_id = @event.uninvited_users.map { |u| u.id }
-      if uninvited_users_id.include?(current_user.id)
+      unless @event.participants_ids.include?(current_user.id)
         raise SecurityError, "Only participant can get the event."
       end
     end

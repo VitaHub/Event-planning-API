@@ -14,14 +14,14 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/events/4328/uninvited",
+      "request_path": "/api/events/907/uninvited",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Access-Token": "-vwE6OJcWpv61VYdEktRQw",
-        "Client": "ZhGnW9rbu1ikI9arc6M6Hg",
+        "Access-Token": "aserYQiBRuDJZd5IufJwqA",
+        "Client": "EtiTaaAYJeKA3oJqy5QMhA",
         "Token-Type": "Bearer",
-        "Uid": "test30@test.com",
+        "Uid": "test33@test.com",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -30,24 +30,24 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 8292,\n    \"name\": \"Just user\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 1641,\n    \"name\": \"Just user\",\n    \"created_at\": \"2017-01-22T16:48:32.983Z\",\n    \"updated_at\": \"2017-01-22T16:48:32.983Z\",\n    \"provider\": \"email\",\n    \"uid\": \"test32@test.com\",\n    \"nickname\": null,\n    \"email\": \"test32@test.com\"\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "access-token": "-vwE6OJcWpv61VYdEktRQw",
+        "access-token": "aserYQiBRuDJZd5IufJwqA",
         "token-type": "Bearer",
-        "client": "ZhGnW9rbu1ikI9arc6M6Hg",
-        "expiry": "1486228038",
-        "uid": "test30@test.com",
-        "ETag": "W/\"ae3c84cbbbf2005694dca412729faaeb\"",
+        "client": "EtiTaaAYJeKA3oJqy5QMhA",
+        "expiry": "1486313313",
+        "uid": "test33@test.com",
+        "ETag": "W/\"cec8a4469d047617a2381a0aa33bfc7b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "Set-Cookie": "_session_id=cVo1SkVqaFZ1N1JNdWJNNWs3UXFNbjlad3hxSTBCRzg5S285WkN4YWNwUS9ZaEZic3JId0xiWEFQWjZFZ2JFcldPeDU2c0FPNEpXTUs1Vm1GRzFQWHFQbzBBSldsYUVrakhiQmpuc2tvMmEwZkFCYlhjVExCZVZLaUIxTzdKMFl1Z1VLWGsxTXdLNmlacEh3V0daQ0hxWXdYODN2dm9saUlObEt0TEE2Ui9pOEhCZzFaUDZveWJJMjBFbTAwak1ZLS1BOVg5UXExajI1VGltSk51S1NlOXp3PT0%3D--85ad15e0ce0232ed246c4cc2fbd98a41a89b0004; path=/; HttpOnly",
-        "X-Request-Id": "6a7e1a10-3a58-495c-949c-7823e73b0da8",
-        "X-Runtime": "0.115364",
+        "Set-Cookie": "_session_id=TWt0dHhxRllEbVFNYXFpUmt2UWN2SnRjU1l3U0VRaXFoR0QyeEJUWk1YVlFRS3JudzJMbGI3QWhKTTFoVzRFMEZCRERmb3pjWllvSEovRDFWZFdJM2RSQzRVWktkZ1MycjF2cjg4d3ZHTTVWdmFETmFhZFZLOWNWalNSa2Z4eGc2b1poR0Z0R1FVUFZuanQ3QjF6bkJpL2FMUkdybjRTRmR6MHdDWS9TSGJXb0FwU0tUVkZPaXRhZDA2WDYwZWdCLS11L2UzaEU5YmsvTDJueWNQU3RPdmxBPT0%3D--4e1d80e1e4570ebfef5aa5ab730e841b5cebaf2c; path=/; HttpOnly",
+        "X-Request-Id": "877a6c8c-aeea-479a-a01c-754dfd6c2a5e",
+        "X-Runtime": "0.119611",
         "Vary": "Origin",
-        "Content-Length": "32"
+        "Content-Length": "197"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
