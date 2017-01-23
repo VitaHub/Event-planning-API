@@ -2,19 +2,20 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV['DB_NAME'] %>
-  password: <%= ENV['DB_PASS'] %>
+  username: postgres
+  password:
+  host: postgresql
 
 development:
   <<: *default
-  database: event-planning-API_development
+  database: event-planning-API_2_development
 
 test:
   <<: *default
-  database: event-planning-API_test
+  database: event-planning-API_2_test
 
 production:
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: event-planning-API_production
+  database: event-planning-API_2_production
