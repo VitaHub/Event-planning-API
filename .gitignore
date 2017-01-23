@@ -19,5 +19,5 @@
 # All uploads
 /public/uploads/*
 
-# Secrets
-/config/secrets.yml
+# env variables
+.env

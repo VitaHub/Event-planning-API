@@ -21,6 +21,7 @@ gem 'devise_token_auth'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'public_activity'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'rails_12factor', group: :production
 
